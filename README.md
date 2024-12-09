@@ -1,5 +1,5 @@
 AI Research Workflow Overview
-AI Research Workflow is a Python-based application designed to orchestrate an AI-driven research process. It leverages multiple AI agents to perform specialized tasks, generate hypotheses, and manage the research workflow with both automated and human oversight. This modular and scalable system ensures efficient research execution, robust error handling, and continuous improvement through feedback mechanisms.
+AI Research Workflow is a Python-based application designed to orchestrate an AI-driven research process. It leverages multiple AI agents to perform specialized tasks, generate hypotheses, and manage the research workflow with both automated and human oversight. This modular and scalable system ensures efficient research execution, robust error handling, and continuous improvement through feedback mechanisms
 
 Table of Contents
 Overview
@@ -22,6 +22,7 @@ Missing Dependencies
 Contributing
 License
 Acknowledgements
+
 Features
 Modular Design: Organized into agents, managers, and utilities for maintainability and scalability.
 AI Agents: Specialized agents (e.g., Immunology AI, Bioinformatics AI, ML AI, Hypothesis Generator) perform distinct research tasks.
@@ -29,9 +30,9 @@ Human Oversight: The HumanResearcher class ensures critical issues are addressed
 Logging Mechanism: Comprehensive logging captures all events, errors, and actions.
 Feedback Loop: Continuous improvement through feedback provided by the PrincipalInvestigator.
 Error Handling: Robust mechanisms handle errors with retry strategies for recoverable issues.
+
 Directory Structure
-markdown
-Copy code
+
 ai_research_workflow/
 │
 ├── agents/
@@ -57,6 +58,7 @@ ai_research_workflow/
 ├── main.py
 ├── requirements.txt
 └── README.md
+
 Description of Key Components
 agents/
 ai_agent.py: Defines the AIAgent base class responsible for task execution, retries, and strategy adjustments based on feedback.
@@ -74,60 +76,55 @@ Miscellaneous
 main.py: Entry point of the application that orchestrates the research workflow.
 requirements.txt: Lists required Python dependencies.
 README.md: Provides an overview of the application, setup instructions, and usage guidelines.
+
 Prerequisites
 Before setting up the AI Research Workflow, ensure you have the following:
 
 Python 3.6 or higher: Download Python
 Git: Download Git
 OpenAI API Key: Sign up and obtain an API key.
+
 Setup Instructions
 Clone the Repository
-bash
-Copy code
+
 git clone https://github.com/yourusername/ai_research_workflow.git
 cd ai_research_workflow
+
 Create and Activate a Virtual Environment
 On Windows:
 
-cmd
-Copy code
 python -m venv venv
 venv\Scripts\activate
+
 On Unix or macOS:
 
-bash
-Copy code
 python3 -m venv venv
 source venv/bin/activate
+
 Install Dependencies
-bash
-Copy code
+
 pip install -r requirements.txt
+
 Ensure requirements.txt includes necessary packages, such as openai.
 
 Set the OpenAI API Key
 On Windows (Command Prompt):
-
-cmd
-Copy code
 set OPENAI_API_KEY=your_api_key
+
 On Windows (PowerShell):
 
-powershell
-Copy code
 $env:OPENAI_API_KEY="your_api_key"
-On Unix or macOS:
 
-bash
-Copy code
+
+On Unix or macOS:
 export OPENAI_API_KEY=your_api_key
+
 Usage
 Running the Research Workflow
 To start the research process:
 
-bash
-Copy code
 python main.py
+
 Workflow Highlights:
 Initialization:
 
@@ -149,24 +146,20 @@ The HumanResearcher addresses critical issues.
 Summary:
 
 Outputs a summary of the research process and outcomes.
+
 Viewing Logs
 Logs are stored in logs/ai_research.log.
 
 Using Command Prompt:
-
-cmd
-Copy code
 type logs\ai_research.log
-Using PowerShell:
 
-powershell
-Copy code
+Using PowerShell:
 Get-Content logs\ai_research.log
+
 Using Unix or macOS:
 
-bash
-Copy code
 cat logs/ai_research.log
+
 Troubleshooting
 Common Issues
 API Key Errors:
@@ -180,32 +173,27 @@ Run the application with sufficient privileges.
 Missing Dependencies:
 
 Verify all packages are installed:
-bash
-Copy code
 pip list
+
 Install missing packages individually:
-bash
-Copy code
 pip install package-name
+
 Contributing
 Contributions are welcome! Follow these steps:
 
 Fork the repository.
 Clone your fork:
-bash
-Copy code
 git clone https://github.com/yourusername/ai_research_workflow.git
+
 Create a new branch:
-bash
-Copy code
 git checkout -b feature/your-feature-name
 Make changes, commit, and push:
-bash
-Copy code
 git add .
 git commit -m "Add feature: your feature description"
 git push origin feature/your-feature-name
+
 Submit a pull request.
+
 License
 This project is licensed under the MIT License. You are free to use, modify, and distribute it per the license terms.
 
@@ -213,3 +201,6 @@ Acknowledgements
 OpenAI: For providing the GPT-4 language model.
 Python Community: For the libraries and tools enabling efficient development.
 You: For utilizing and enhancing this AI Research Workflow.
+
+
+
