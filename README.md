@@ -134,17 +134,17 @@ On Windows (Command Prompt):
 
 cmd
 Copy code
-set OPENAI_API_KEY=sk-your-api-key
+set OPENAI_API_KEY=<your-api-key>
 On Windows (PowerShell):
 
 powershell
 Copy code
-$env:OPENAI_API_KEY="sk-your-api-key"
+$env:OPENAI_API_KEY="<your-api-key>"
 On Unix or MacOS:
 
 bash
 Copy code
-export OPENAI_API_KEY=sk-your-api-key
+export OPENAI_API_KEY=<your-api-key>
 Important:
 
 Replace sk-your-api-key with your actual OpenAI API key.
